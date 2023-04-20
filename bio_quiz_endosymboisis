@@ -1,0 +1,12 @@
+1. why dynamic programming? 
+    only do each task twice     (👍)
+2. Assume that d_3 = 7. Which entries are (among those) needed to compute c[3,18]?
+    c[3,11], c[3,12], c[2,18]   (0.5)
+    c[3,11], c[3,12] (0.0)
+3. For the case i,a > 0 and d_i <= a, we list some alternative recurrences; tell why they are wrong
+    c[i,a] = max(c[i-1, a], 1 + c[i, a - d_i])      -   only pennies
+    c[i,a] = min(c[i-1, a], 1 + c[i-1, a - d_i])    -   at most one of each
+4. Does the dynamic programming algorithm for giving optimal exact change tell us which coins to use?
+     yes, you can find out by a suitable traversal of the table
+5. Is the dynamic programming algorithm for giving optimal exact change applicable to the US coin system (25c, 10c, 5c, 1c)?
+    yes, but simpler algs exits 
