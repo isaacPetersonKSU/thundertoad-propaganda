@@ -1,0 +1,12 @@
+#Isaac Peterson
+#Abstract
+Mushroom cultivation is growing, both as a hobby and a small business
+opportunity. Grain spawn is a nutrient-dense food source fully colonized and
+free from contamination. It is used to inoculate a larger substrate, like straw
+or sawdust, giving the desired fungus a head start against any competing
+decomposers. Because producing it can be slow and tedious, it is often
+expensive. I designed a device that makes grain spawn production easier and
+quicker. The project runs on a raspberry pi zero SBC. The sensor and control
+code is written in rust. Data is logged in a SQLite database. Freecad was used
+to model all mechanical parts, and python was used to automate part of that
+process. Data will accessable by exporting a csv of log files. 

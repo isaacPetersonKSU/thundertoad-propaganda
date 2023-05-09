@@ -1,0 +1,29 @@
+#Isaac Peterson
+#Abstract
+Mushroom cultivation is growing, both as a hobby and a small business. Grain
+spawn is a nutrient-dense food source fully colonized and free from
+contamination. It is used to inoculate a larger substrate, like straw or
+sawdust, giving the desired fungus a head start against any competing
+decomposers. Because producing it can be slow and tedious, it is often
+expensive. I designed a device that seeks to make the production of grain spawn
+easier and quicker.
+
+Fresh air is filtered and pushed through to increase the
+respiration rate, by making more oxygen available to the fungus. More
+importantly, the respiration rate can be estimated by recording how often a the
+fans must turn on to maintain a desired (and yet to be determined) O2 level. The
+respiration rate of a fungal network is proportional to the amount of food it is
+consuming. This is useful because sometimes you can't see if the middle
+whether the container is colonized or not.
+
+Knowing when mycelium is done eating by waiting for it to stop breathing is
+not this device's only use. The food a mycelium can consume is proportional to
+it's surface area, so we would expect the respiration rate to start slow, but
+increase proportionally to the surface area of a sphere. Major deviations from
+This model before the colony reaches the edge of the container could be a useful
+way to detect contamination early because they suggest multiple inoculation
+points.
+
+The project runs on a raspberry pi zero SBC. The sensor and control code is
+written in rust. Data is logged in a SQLite database. Freecad was used to model
+all mechanical parts, and python was used to automate part of that process. 
